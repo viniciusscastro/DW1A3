@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset = "utf-8"/>
+		<title>Exercicios Aula 5</title>
+		<style type="text/css">
+			table {
+				border: none;
+			}
+			th, td {
+				border: none;
+				background-color:#dddddd;
+				padding: 5px;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+	<h1><b>Exercicio 1 </b></h1>
+	<br>
+		<table>
+			<tr>
+				<th>segunda</th>
+				<th>terça</th>
+				<th>quarta</th>
+			</tr>
+			<tr>
+				<td colspan = "2">coluna mesclada</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td>45</td>
+				<td>60</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td>90</td>
+				<td rowspan = "2">90</td>
+			</tr>
+			<tr>
+				<td>60</td>
+				<td>90</td>
+			</tr>
+		</table>
+	<h1><b>Exercicio 2 </b></h1>
+	<br>
+	<form action=""http://www.example.com/login.php">
+		<fieldset>
+			<p>Aula do exercicio:
+				<input type="text" name="username" size ="15" maxlenght="30">
+			</p>
+		</fieldset>
+		<fieldset>
+			<p>exercicios feitos:
+				<input type="text" name="password" size ="15" maxlenght="30">
+			</p>
+		</fieldset>
+		<fieldset>
+			<p>comente sobre dificuldade dos exercicios:</p>
+				<textarea name="comments" cols="20" rows="4">Entre com seu comentario...</textarea>
+		</fieldset>
+		<fieldset>
+			<p>Em geral como foi fazer os exercicios?
+				<br>
+				<input type="radio" name="dificult" value="facil"/>Facil
+				<input type="radio" name="dificult" value="medio"/>medio
+				<input type="radio" name="dificult" value="dificil"/>dificil
+				</p>
+				<br>
+		</fieldset>
+		<fieldset>
+			<p>Tem certeza que essa foi a dificildade?
+				<br>
+				<input type="checkbox" name="comcerteza" value="comcerteza"/>Com certeza!
+				<input type="checkbox" name="eumenti" value="eumenti"/>Eu menti D:
+				</p>
+				<br>
+		</fieldset>
+		<fieldset>
+			<p>Se mentiu selecione a opção que diz a verdade!
+				<select name="verdade">
+					<option value="foifacil">Facil</option>
+					<option value="foimedio">Medio</option>
+					<option value="foidificil">Dificil</option>
+				</select>
+			</p>
+		</fieldset>
+		<fieldset>
+			<label for="favorito">mas eai qual foi o melhor exercicio na sua opnião:</label>
+			<input type="text" name="exercicio-favorito" list="exercicios">
+			<datalist id="exercicios">
+				<option value="ex-1" label ="exercicio-1">
+				<option value="ex-2" label ="exercicio-2">
+				<option value="ex-3" label ="exercicio-3">
+			</datalist>
+		</fieldset>
+		<fieldset>
+			<p>Se quiser pode mandar um arquivo descrevendo suas dificuldades<p>
+			<input type="file" name="dificuldades" /> <br>
+		</fieldset>
+		<fieldset>
+			<p>Enviar respostas do formulario<p>
+			<input type="submit" name="dificuldades" /> <br>
+		</fieldset>
+	</form>
+	<br>
+	<h1><b>Exercicio 3</b></h1>
+	</body>
+</html>

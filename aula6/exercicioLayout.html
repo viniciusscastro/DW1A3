@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset = "utf-8"/>
+	<title>Exercicio 1 layout</title>
+	<link rel="stylesheet" type="text/css" href="css/exercicioLayout.css">
+<body>
+<div id="page">
+	<fieldset>
+		<div id="header">
+			<h1>Pagina Pessoal do Vinicius Castro<h1>
+			<div id="nav">
+				<a class = "botao-menu" href="#article">Perfil resumido</a>
+				<a class = "botao-menu" href="#imagem">Mapa de imagem</a>
+				<a class = "botao-menu" href="#video">Video</a>
+				<a class = "botao-menu" href="#audio">Audio</a>
+				<a class = "botao-menu" href="#tabelas">Tabelas</a>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset>
+		<div id="content">
+			<div id="article">
+				<h3>Perfil resumido</h3>
+				<p> Vinicius silva Castro é um aluno do IFSP atualmente estou no meu terceiro semestre e pretendo me tornar um otimo programador.</p>
+			</div>
+			<div id="imagem">
+				<h3>Mapa de imagem</h3>
+				<img src="img/maparegiaosul.png" usemap="#meumapa"/>
+				<map name="meumapa">
+					<area target="_blank" alt="Rio Grande do Sul" title="Rio Grande do Sul" href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" coords="45,134,103,86,164,107,172,142,127,183" shape="poly">
+					<area target="_blank" alt="Santa Catarina" title="Santa Catarina" href="https://pt.wikipedia.org/wiki/Santa_Catarina" coords="114,82,113,68,158,72,198,65,202,94,180,121,154,93" shape="poly">
+					<area target="_blank" alt="Parana" title="Parana" href="https://pt.wikipedia.org/wiki/Paran%C3%A1" coords="102,38,111,59,165,63,208,50,184,30,178,13,148,6,120,7,108,14" shape="poly">
+				</map>
+			</div>		
+		</div>
+	</fieldset>
+	<fieldset id="multimidia">
+		<div id="video">
+			<h2>Video</h2>
+			<video width="320" height="240" controls >
+				<source src="video/ExportStock_00.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div id="audio">
+			<h2>Audio</h2>
+			<audio src="audio/Factory Background.mp3" controls></audio>
+		</div>
+	</fieldset>
+	<fieldset>
+		<div id="tabelas">
+			<h3>Tabelas</h3>
+			<table>
+				<tr>
+					<th>Vinicius</th>
+					<th>Silva</th>
+					<th>Castro</th>
+				</tr>
+				<tr>
+					<td>40</td>
+					<td>27</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td>60</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>60</td>
+					<td>90</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>60</td>
+					<td>90</td>
+					<td>10000</td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+</div>
+
+</body>
+</html>
